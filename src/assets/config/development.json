@@ -1,0 +1,17 @@
+{
+  "api": {
+    "storeUrl":"http://localhost:9000/api/"
+
+  },
+  "paths": {
+    "imagesRoot": "/assets/images/",
+    "userImageFolder": "/assets/images/users/"
+  },
+  "resize": {
+    "imageUrl": "http://localhost:9000/api/media/image-resize"
+  },
+  "productinfo": {
+    "productInfoUrl": "http://localhost:4205/#/"
+  }
+  
+}

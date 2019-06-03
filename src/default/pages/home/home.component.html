@@ -1,0 +1,48 @@
+<app-main-carousel [slides]="listSandbox.bannerList$ | async"></app-main-carousel>
+
+<div fxLayout="row wrap" class="info-bar">
+    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="50">
+        <mat-card class="light-block" fxLayout="row"  fxLayoutAlign="start center">
+            <mat-icon class="mat-icon-xlg text-muted m-0">card_giftcard</mat-icon>
+            <div class="content">
+                <p>{{'home.BONUSPLUS'|translate}}</p>
+                <span class="text-muted m-0">{{'home.MakeFunOfShopping'|translate}}</span>
+            </div> 
+        </mat-card> 
+    </div>
+    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="50"> 
+        <mat-card class="light-block" fxLayout="row"  fxLayoutAlign="start center">
+            <mat-icon class="mat-icon-xlg text-muted m-0">local_shipping</mat-icon>
+            <div class="content">
+                <p>{{'home.FREESHIPPING'|translate}}</p>
+                <span class="text-muted m-0">{{'home.FreeShipping$99'|translate}}</span>
+            </div> 
+        </mat-card>
+    </div>
+    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="50"> 
+        <mat-card class="light-block" fxLayout="row"  fxLayoutAlign="start center">
+            <mat-icon class="mat-icon-xlg text-muted m-0">monetization_on</mat-icon>
+            <div class="content">
+                <p>{{'home.MONEYBACKGUARANTEE'|translate}}</p>
+                <span class="text-muted m-0">{{'home.30DaysMoneyGuarantee'|translate}}</span>
+            </div> 
+        </mat-card>
+    </div>
+    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="50"> 
+        <mat-card class="light-block" fxLayout="row"  fxLayoutAlign="start center">
+            <mat-icon class="mat-icon-xlg text-muted m-0">history</mat-icon>
+            <div class="content">
+                <p>{{'home.ONLINESUPPORT24/7'|translate}}</p>
+                <span class="text-muted m-0">{{'home.CallUs'|translate}}</span>
+            </div> 
+        </mat-card>
+    </div>
+</div>
+
+
+<div class="products-tabs">  
+     <h3 style="color: gray">{{'home.FeaturedProducts'|translate}}</h3>
+    <app-products-carousel [products]="listSandbox.featuredList$ | async"></app-products-carousel>
+
+</div>
+<app-brands-carousel [brands]="listSandbox.manufacturer$ | async"></app-brands-carousel>
